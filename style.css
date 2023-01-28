@@ -1,0 +1,81 @@
+html{
+    background: rgba(0, 0, 0, 0.5) url(mountains_background.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    border: 0px solid green;
+}
+
+body{
+    text-shadow: 0 0 3px;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+/*    height: 200vh;*/
+
+    border: 0px solid red;
+}
+
+#portrait{
+    margin-top: 50px;
+    height: 25vh;
+
+    border: 0px solid red;
+}
+
+#icons{
+   font-size: 1.5rem;
+
+
+   border: 0px solid blue;
+}
+
+#introduction{
+    font-size: 15pt;
+
+    border: 0px solid purple;
+}
+
+#icons i{
+    padding: 5px;
+    padding-bottom: 30px;
+    color: white;
+    
+
+    border: 0px solid purple;
+ 
+}
+
+#icons i:hover{
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+}
+
+#bottom_part{
+    display: flex;
+    height: 200vh;
+
+    border: 0px solid yellow;
+}
+
+#list ul{
+    font-size: 15pt;
+    padding-left: 10px;
+    margin-left: 20px;
+    border-radius: 50px;
+/*  box-shadow: h   v   blur spread color;*/
+    box-shadow: 5px 5px 10px 0px black;
+
+    background-color: grey;
+}
+
+#list ul span{
+    float: right;
+    padding-right: 10px;
+}
+
+
