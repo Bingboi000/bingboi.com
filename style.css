@@ -10,7 +10,7 @@ html{
 
 body{
     text-shadow: 0 0 3px;
-    max-width: 50%;
+    max-width: 60%;
     margin: auto;
     margin-top: 100px;
     color: white;
@@ -38,6 +38,14 @@ body{
     font-size: 15pt;
 
     border: 0px solid purple;
+}
+
+#projects_section #flappy_bird{
+    width: 98%;
+}
+#projects_section #hangman{
+    width: 98%;
+    margin-top: 20px;
 }
 
 #icons i{

@@ -6,6 +6,7 @@
         <title>Benito Mascariñas</title>
 
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="hangman_styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     </head>
 
@@ -25,7 +26,7 @@
                 <a href="https://www.tiktok.com/" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
                 <!-- <i class="fa-brands fa-linkedin"></i> -->
                 <a href="https://github.com/" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></i></a>
-                 <a href="https://unity.com/" target="_blank" title="Unity"><i class="fa-brands fa-unity"></i></i></a>
+                <a href="https://unity.com/" target="_blank" title="Unity"><i class="fa-brands fa-unity"></i></i></a>
             </div>
 
             <hr/>
@@ -34,15 +35,71 @@
             <hr/> 
         </div>
         <div id="bottom_part">
-            <div style="border: 0px solid red; width: 50%;">
+            <div id="projects_section" style="border: 0px solid red; width: 50%;">
             	<h1>Projects</h1>
 
-                <iframe src="https://play.unity.com/webgl/f138b8e8-25d6-4962-8eff-a86df1e8e88c?screenshot=false&embedType=embed" style="width: 100%; height: 350px;"></iframe>
+                <div id="flappy_bird">
+                    <iframe src="https://play.unity.com/webgl/f138b8e8-25d6-4962-8eff-a86df1e8e88c?screenshot=false&embedType=embed" style="width: 100%; height: 350px;"></iframe>
+                </div>
 
-                 <!--<iframe id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
+                 <!-- <iframe id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
                 mozallowfullscreen="true" src="https://play.unity.com/webgl/f138b8e8-25d6-4962-8eff-a86df1e8e88c?screenshot=false&embedType=embed"  width="810"
                 height="640" onmousewheel="" webkitallowfullscreen="true"></iframe> -->
+                
+                <!-- hangman -->
+                <div id="hangman">
+                    <div class="game_header">
+                        <p>Hangman Game</p>
+                        <button class="button_category" id="animals_button" onclick="animalsButton()">Animals</button>
+                        <button class="button_category" id="countries_button" onclick="countriesButton()">Countries</button>
+                        <button class="button_category" id="fruits_button" onclick="fruitsButton()">Fruits</button>
+                        <!-- <button class="button_category" id="reset" onclick="resetButton()">Reset</button> -->
+                    </div>
+                
+                    <div class="canvas_container">
+                        <canvas id="canvas" width="300" height="160">Your browser does not support the HTML5 canvas tag.</canvas>
+                    </div>
+                
+                    <div id="category_header">Choose Category To Start Game</div>
+                
+                    <div id="word_container"></div>
+                
+                    <div id="alphabet">
+                        <button class="letter" id="letterA" onclick="disableWhenClickA()">A</button>
+                        <button class="letter" id="letterB" onclick="disableWhenClickB()">B</button>
+                        <button class="letter" id="letterC" onclick="disableWhenClickC()">C</button>
+                        <button class="letter" id="letterD" onclick="disableWhenClickD()">D</button>
+                        <button class="letter" id="letterE" onclick="disableWhenClickE()">E</button>
+                        <button class="letter" id="letterF" onclick="disableWhenClickF()">F</button>
+                        <button class="letter" id="letterG" onclick="disableWhenClickG()">G</button>
+                        <button class="letter" id="letterH" onclick="disableWhenClickH()">H</button>
+                        <button class="letter" id="letterI" onclick="disableWhenClickI()">I</button>
+                
+                        <button class="letter" id="letterJ" onclick="disableWhenClickJ()">J</button>
+                        <button class="letter" id="letterK" onclick="disableWhenClickK()">K</button>
+                        <button class="letter" id="letterL" onclick="disableWhenClickL()">L</button>
+                        <button class="letter" id="letterM" onclick="disableWhenClickM()">M</button>
+                        <button class="letter" id="letterN" onclick="disableWhenClickN()">N</button>
+                        <button class="letter" id="letterO" onclick="disableWhenClickO()">O</button>
+                        <button class="letter" id="letterP" onclick="disableWhenClickP()">P</button>
+                        <button class="letter" id="letterQ" onclick="disableWhenClickQ()">Q</button>
+                        <button class="letter" id="letterR" onclick="disableWhenClickR()">R</button>
+                
+                        <button class="letter" id="letterS" onclick="disableWhenClickS()">S</button>
+                        <button class="letter" id="letterT" onclick="disableWhenClickT()">T</button>
+                        <button class="letter" id="letterU" onclick="disableWhenClickU()">U</button>
+                        <button class="letter" id="letterV" onclick="disableWhenClickV()">V</button>
+                        <button class="letter" id="letterW" onclick="disableWhenClickW()">W</button>
+                        <button class="letter" id="letterX" onclick="disableWhenClickX()">X</button>
+                        <button class="letter" id="letterY" onclick="disableWhenClickY()">Y</button>
+                        <button class="letter" id="letterZ" onclick="disableWhenClickZ()">Z</button>
+                    </div>
+                    <div id="hangman_bottom_part"></div>
+                </div>
+                <!-- hangman -->
+                
             </div> 
+            <!-- <hr/> -->
             <div style=" border: 0px solid orange; width: 50%;">
             	<h1>Skills</h1>
             	<div id="list">
@@ -70,4 +127,7 @@
     <!-- backgound image used -->
     <!-- <div>background image <a href="https://pixabay.com/vectors/mountains-panorama-forest-mountain-1412683/">link</a><div> -->
     <!-- January 5, 2023 -->	
+
+
+<script src="hangman_script.js"></script>
 </html>

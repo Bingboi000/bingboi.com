@@ -1,0 +1,138 @@
+ /* #hangman{
+	margin: 0 auto;
+	text-align: center;
+	font-size: x-large;
+	background-color: grey;
+
+	border: 0px solid green;
+	
+	box-shadow: 5px 5px 10px 0px black;
+
+}
+
+#hangman button {
+	border: 0px solid black;
+}
+
+
+.game_header p{
+	text-transform: uppercase;
+	box-shadow: 5px 5px 10px 0px black;
+
+	border: 0px solid #000;
+}
+.game_header .button_category{
+	padding: 10px;
+}
+
+#word_container{
+	height: 50px;
+}
+
+.canvas_container{
+
+	border: 0px solid black;
+}
+canvas{
+
+	border: 0px solid green;
+}
+
+#alphabet {
+	padding-bottom: 10px;
+
+	border: 0px solid green;
+	
+}
+.letter{
+	padding: 10px;
+
+	border: 0px solid green;
+}
+
+#hangman_bottom_part{
+	height: 30px;
+	box-shadow: 5px 5px 10px 0px black;
+
+	border: 0px solid green;
+} */
+
+
+#hangman{
+	/* reset */
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	/* reset */
+
+	background-color: grey;
+	text-align: center;
+
+	border: 0px solid black;
+}
+
+#hangman .game_header{
+	text-transform: uppercase;
+	font-family: 'Verdana';
+	font-size: x-large;
+
+	border: 0px solid red;
+}
+#hangman .game_header p{
+	margin: 0;
+	margin-bottom: 20px;
+			 /* hor ver blur spread color */
+	box-shadow: 0px 5px 5px 0px rgb(20, 20, 20); 
+
+	border: 0px solid green;
+}
+#hangman .game_header button{
+	color: white;
+	height: 30px;
+	cursor: pointer;
+
+	background-color: rgb(100, 100, 100);
+
+	border: 1px solid black;
+}
+
+#hangman .canvas_container{
+	border: 0px solid red;
+}
+#hangman .canvas_container canvas{
+	border: 0px solid green;
+}
+
+#hangman #category_header{
+	border: 0px solid red;
+}
+
+#hangman #word_container{
+	border: 0px solid red;
+}
+
+#hangman #alphabet{
+	/* width: 240px; */
+	padding: 20px 50px 20px 50px;
+
+	border: 0px solid red;
+}
+#hangman #alphabet button{
+	/* padding: 5px; */
+	/* margin: 1px; */
+	width: 25px;
+	
+
+	border: 0px solid green;
+}
+
+#hangman #hangman_bottom_part{
+	height: 30px;
+	box-shadow: 0px -5px 5px 0px rgb(20, 20, 20); 
+
+	border: 0px solid red;
+}
